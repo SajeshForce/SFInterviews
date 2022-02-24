@@ -14,6 +14,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>HandshakeInformationController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>InterviewCandidatesGridHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ProblemsDiscussedController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SFInterviewException</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -67,6 +79,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>EventInterviewSchedule__c.Interviewer_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FeedbackItem__c.Comments__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -103,6 +120,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Hired_Candidate__c.Onboarding_Completed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>HiringPanelMember__c.Email__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -146,6 +168,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>InterviewEventCandidate__c.Aggregated_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>InterviewEventCandidate__c.Available_From__c</field>
         <readable>false</readable>
@@ -166,14 +193,19 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>InterviewEventCandidate__c.Current_Interviewers__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>InterviewEventCandidate__c.Google_Meet__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>InterviewEventCandidate__c.Hire_Status__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -234,6 +266,11 @@
         <editable>true</editable>
         <field>Interview__c.Overall_Rating__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Interview__c.Problems_Discussed__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -304,7 +341,7 @@
         <layout>FeedbackItem__c-Feedback Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Hired_Candidate__c-Hired Candidate Pool Layout</layout>
+        <layout>Hired_Candidate__c-Hired Candidate Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>HiringPanelMember__c-HiringPanelMember Layout</layout>
@@ -349,7 +386,7 @@
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Team_Allocation_Template_Items__c-Team Allocation Template Item Layout</layout>
+        <layout>Team_Allocation_Template_Item__c-Team Allocation Template Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Team_Assignment__c-Team Assignment Layout</layout>
@@ -467,6 +504,10 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>Hired_Candidate__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>HiringPanel__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -485,6 +526,14 @@
     <tabVisibilities>
         <tab>Questionaire__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Scrum_Team_Template__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Scrum_Team__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>

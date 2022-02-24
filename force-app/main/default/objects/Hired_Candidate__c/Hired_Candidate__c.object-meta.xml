@@ -149,17 +149,18 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <label>Hired Candidate</label>
     <nameField>
-        <label>Hired Candidate Pool Name</label>
-        <type>Text</type>
+        <displayFormat>Hired-{0000}</displayFormat>
+        <label>Hired Candidate Name</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Hired Candidat</pluralLabel>
-    <searchLayouts/>
+    <pluralLabel>Hired Candidates</pluralLabel>
+    <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
